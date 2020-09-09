@@ -42,10 +42,11 @@ export const Toast = styled.div<ToastProps>`
     margin-top: 8px;
   }
 
-  ${(props) => toastTypeVariations[props.type || 'info']}
 
   background: #ebf8ff;
   color: #3172b7;
+
+  ${(props) => toastTypeVariations[props.type || 'info']}
 
   > svg {
     margin: 4px 12px 0 0;

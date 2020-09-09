@@ -24,7 +24,6 @@ const ToastContainer: React.FC = () => (
 
       <div>
         <strong>Aconteceu um erro</strong>
-        <p>Não foi</p>
       </div>
 
       <button type="button">
@@ -33,7 +32,7 @@ const ToastContainer: React.FC = () => (
 
     </Toast>
 
-    <Toast type="error" hasDescription={false}>
+    <Toast type="error" hasDescription>
       <FiAlertCircle size={20} />
 
       <div>
@@ -47,19 +46,6 @@ const ToastContainer: React.FC = () => (
 
     </Toast>
 
-    <Toast type="error" hasDescription={false}>
-      <FiAlertCircle size={20} />
-
-      <div>
-        <strong>Aconteceu um erro</strong>
-        <p>Não foi</p>
-      </div>
-
-      <button type="button">
-        <FiXCircle size={18} />
-      </button>
-
-    </Toast>
   </Container>
 );
 export default ToastContainer;
