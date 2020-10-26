@@ -82,7 +82,7 @@ const ForgotPssword: React.FC = () => {
 
             <Input name="email" icon={FiMail} placeholder="E-mail" />
 
-            <Button type="submit">Recuperar</Button>
+            <Button loading={loading} type="submit">Recuperar</Button>
           </Form>
 
           <Link to="/signin">
